@@ -1,0 +1,236 @@
+	html{
+		scroll-behavior: smooth;
+	}
+	*{
+		margin: 0;
+		padding: 0;
+	}
+
+	body{
+		background-color: #F1F1D5;
+	}
+
+	header{
+		background-color: #FF6F4F;
+		height: 200px;
+		width: 98%;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 10px 1%;
+	}
+
+	.banner{
+		position: relative;
+		width: 100%;
+		height: 200px;
+		overflow: hidden;
+	}
+
+	.Img{
+		width: 100%;
+		height: 100%;
+	}
+
+	.Img img {
+		width: 100%;
+		height: 100%;
+		display: block;
+		object-fit: cover;
+		object-position: 50% 60%;
+	}
+
+	.title{
+		z-index: 1;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		text-align: center;
+		transform: translateY(-50%);
+		width: 100%;	
+		color: white;
+	}
+
+	.title h1{
+		margin: 0;
+		font-size: 90px;
+		text-shadow: 5px 1px 5px black;
+
+	}
+
+	nav{
+		margin: 10px;
+		border-radius: 10px;
+		background-color: #FFCA52;
+		height: 40px;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	nav a{
+		border-radius: 15px;
+		text-decoration: none;
+		color: white;
+		font-size: 25px;
+		margin: 40px;
+	}
+
+	nav a:hover{
+		font-weight: bolder;
+		color: white;
+		padding: 10px 10px;
+		background-color: #FF372B;
+		text-decoration: underline;
+		transition: 0.5s;
+		text-shadow: 2px 1px 2px black;
+	}
+	#conteudo{
+		display: flex;
+		align-items: flex-start;
+	}
+
+	#esquerda{
+		padding: 5px;
+		border-bottom-left-radius: 10px;
+		border-top-left-radius: 10px;
+		margin-left: 1%;
+		position: sticky;
+		top: 0;
+		left: 0;
+		background-color: #761D15;
+		width: 8%;
+		height: 600px;
+		overflow: hidden;
+		transition: 0.4s;
+	}
+
+	#esquerda:hover{
+		width: 10%;
+		border-top-right-radius: 15px;
+	}
+
+	#topics a{
+		font-size: 20px;
+		color: white;
+		text-decoration: none;
+		transition: 0.4s;
+	}
+	#topics a:hover{
+		color: lightgrey;
+		font-weight: bolder;
+		text-decoration: underline;
+	}
+.topico{
+	margin-bottom: 5px;
+}
+
+.topico .descricao {
+    display: grid;
+    grid-template-rows: 0fr;
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        grid-template-rows 0.4s ease,
+        opacity 0.4s ease,
+        visibility 0.4s;
+}
+
+.topico .descricao p {
+    overflow: hidden;
+}
+
+.topico:hover .descricao {
+    grid-template-rows: 1fr;
+    opacity: 1;
+    visibility: visible;
+}
+
+	#direita{
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		margin-right: 1%;
+		background-image: url(Imagens/Papel.jpg);
+		background-repeat: repeat;
+		background-color: #FFF6ED;
+		height: 610px;
+		width: 95%;
+		display: flex;
+	}
+
+	.artigos{
+		flex: 1;
+		width: 50%;
+		margin: 10px;
+
+	}
+
+	.destaque{
+		background-color: #F1F1D5;
+		width: 95%;
+		height: 150px;
+		border-radius: 10px;
+
+		border: #332B21 2px dashed;
+		box-shadow: 5px 5px 3px #998873;
+		margin: 10px;
+		padding: 10px;
+	}
+	.Texto,.TextoMenor{
+		font-family: Sans-Serif,arial,verdana;
+		text-align: justify;
+
+	}
+	.Texto{
+		font-size: 18px;
+
+	}
+	.TextoMenor{
+		font-size: 16px;
+	}
+
+.imagens {
+    cursor: grab;
+    border-radius: 10px;
+    margin: 20px 50px;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+    transition: 0.4s;
+}
+
+/* IMAGEM QUE SERÁ ARRASTADA */
+
+.imagemArrastavel {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    max-width: none;
+    transform-origin: center center;
+
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+/* EFEITO AO PASSAR O MOUSE */
+
+.imagens:hover {
+    cursor: grab;
+}
+
+	footer{
+		text-align: center;
+		border-radius: 10px;
+		margin: 10px;
+		height: 150px;
+		background-color: grey;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		
+	}
